@@ -36,14 +36,15 @@ public class Application
                 commandSTR = strings[0];
                 arguments = Arrays.asList(strings);
                 arguments.remove(0);
-            } catch (IOException e)
+            }
+            catch (IOException e)
             {
                 commandSTR = null;
                 arguments = null;
                 e.printStackTrace();
             }
             final Command command = this.commandHandler.findByName(commandSTR);
-            if(command != null) 
+            if(command != null)
                 command.onExecution(arguments);
         } while (true);
     }
