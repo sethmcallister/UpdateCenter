@@ -8,7 +8,7 @@ public class Project
     private final String projectName;
     private String projectVersion;
 
-    private Project(String projectName, String projectVersion)
+    public Project(String projectName, String projectVersion)
     {
         this.projectName = projectName;
         this.projectVersion = projectVersion;

@@ -24,4 +24,8 @@ public class ProjectHandler
                 .findFirst()
                 .orElse(null);
     }
+
+    public void add(final Project project) {
+        this.projects.add(project);
+    }
 }
