@@ -6,7 +6,7 @@ package xyz.mcallister.update.dto;
 public class Project
 {
     private final String projectName;
-    private final String projectVersion;
+    private String projectVersion;
 
     private Project(String projectName, String projectVersion)
     {
@@ -22,5 +22,9 @@ public class Project
     public String getProjectVersion()
     {
         return projectVersion;
+    }
+
+    public void setProjectVersion(final String version) {
+        this.projectVersion = version;
     }
 }
